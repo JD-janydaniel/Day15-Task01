@@ -6,7 +6,12 @@ request.onload = function () {
 
     var heading = document.createElement("h1");
     heading.innerText = "Pagination in DOM Manipulation";
-    document.body.append(heading);
+    heading.id = "title"
+
+    var para = document.createElement("p");
+    para.innerText = "Here In this page a table is use to display a Persions Name and Email Id by geting the data from the Api"
+    para.id ="description"
+    document.body.append(heading ,para);
 
     var itemsPerPage = 10; // Number of items to display per page
     var currentPage = 1; // Current page
@@ -17,18 +22,20 @@ request.onload = function () {
         var paginatedData = result.slice(startIndex, endIndex);
 
         var table = document.createElement("table");
-        table.className = "table";
+        table.className = "table table-bordered";
 
         var thead = document.createElement("thead");
         thead.className = "thead";
 
         function create_tr() {
             var tr = document.createElement("tr");
+            tr.className = " table-bordered";
             return tr;
         }
 
         function create_th(content) {
             var th = document.createElement("th");
+            th.className = " table-bordered";
             th.innerHTML = content;
             return th;
         }
@@ -47,6 +54,7 @@ request.onload = function () {
 
         function create_td(content) {
             var td = document.createElement("td");
+            td.className = " table-bordered"
             td.innerHTML = content;
             return td;
         }
@@ -62,8 +70,16 @@ request.onload = function () {
             tbody.append(tbody_tr1);
         });
 
+
+
         table.append(tbody);
-        document.body.append(table);
+
+        var tableContainer = document.createElement("div");
+        tableContainer.className = "table-responsive";
+        tableContainer.appendChild(table);
+
+        document.body.appendChild(tableContainer);
+        
     }
 
     // Function to handle pagination

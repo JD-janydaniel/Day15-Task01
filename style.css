@@ -4,20 +4,30 @@ body {
     background-color: #edf5e1;
   }
   
-  h1{
+  #title{
     font-size: 40px;
     text-align: center;
     color:#94b266;
     text-shadow: 2px 2px 4px #000000;
   }
-  table{
+  #description{
+    font-size: 32px;
+    text-align: center;
+    color:#94b266;
+    
+  }
+  .table{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border: 1px solid black;
-    border-collapse:collapse;
+    /* border: 1px solid black;
+    border-collapse:collapse; */
     
+  }
+  .table-bordered{
+    border: 1px solid red;
+    border-collapse:collapse;
   }
   thead{
 
@@ -28,9 +38,9 @@ body {
     }
     th,td{
       height:40px;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       border-collapse:collapse;
-      border-color: #9eb57c;
+      /* border-color: #9eb57c; */
     }
     tbody{
       font-size: 20px;
