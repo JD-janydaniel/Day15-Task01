@@ -18,3 +18,5 @@
 </ul>
 I have completed the task using the DOM manipulation method and CSS, Bootstrap for the style<br>
 Deployed the task using the netlify and pushed the source code to the GitHub repo
+<h3>Deployment Link</h3>
+https://celadon-scone-6eea71.netlify.app/
