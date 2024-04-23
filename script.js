@@ -13,7 +13,7 @@ request.onload = function () {
 
   var para = document.createElement("p");
   para.innerText =
-    "Here In this page a table is use to display a Persions Name and Email Id by geting the data from the Api";
+    "Here In this page a table is use to display a Persions Name and Email Id by fetching the data from the API";
   para.id = "description";
   document.body.append(heading, para);
 
